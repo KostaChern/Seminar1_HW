@@ -5,17 +5,21 @@ Console.Clear();
 Console.WriteLine("Введите число >");
 
 string value = System.Console.ReadLine();
-System.Console.WriteLine($"ВВЕДЕНО {value}");
+System.Console.WriteLine($"ЧЕТНЫЕ ЧИСЛА ОТ 1 ДО {value}:");
 
-int a = Convert.ToInt32(value);
+int max = Convert.ToInt32(value);
+int N = 1;
 
-if (a % 2 == 0)
-{
-    System.Console.WriteLine("Введеное число является ЧЕТНЫМ");
-}
+while (N < max + 1)
 
-else
-{
-   System.Console.WriteLine("Введеное число является HEчетным");  
-}
+    if (N % 2 == 0)
+    {
+        System.Console.Write($"{N},");
+        N = N + 1;
+    }
+
+    else
+    {
+        N = N + 1;
+    }
 
